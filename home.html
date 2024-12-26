@@ -4,64 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>蠟筆小新</title>
-    
-    <!-- 連結外部 CSS 樣式表 -->
     <link rel="stylesheet" href="japan.css" />
-    
-    <!-- 引入 Bootstrap 樣式 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         /* 主區塊的背景色與內邊距設置 */
         .main {
-            background-color: thistle;
-            padding: 20px;
+            background-color: thistle; /* 背景顏色 */
+            padding: 20px; /* 內邊距 */
         }
 
         /* 圖片 hover 特效：旋轉、陰影與邊框 */
         .peoples img:hover {
-            transition: all 0.3s;
-            box-shadow: 6px 4px 6px slategray;
-            transform: rotateZ(3deg);
-            border: 5px solid palevioletred;
+            transition: all 0.3s; /* 定義過渡效果，讓圖片在滑鼠懸停時有平滑的動畫效果 */
+            box-shadow: 6px 4px 6px slategray;/* 加入陰影效果，讓圖片有立體感 */
+            transform: rotateZ(3deg);/* 當滑鼠停住時，圖片會順時針旋轉3度 */
+            border: 5px solid palevioletred; /* 在圖片邊緣加上5px的實線邊框，顏色為淡紫紅 */
         }
 
         /* 右側區塊內訊息樣式 */
         .main_right .msg {
-            text-align: center;
-            font-size: 30px;
-            color: white;
-            background-color: pink;
-            margin-bottom: 20px;
-            padding: 10px;
+            text-align: center; /* 設定文字對齊方式為置中 */
+            font-size: 30px;  /* 設定文字大小為30px */
+            color: white; /* 設定文字顏色為白色 */
+            background-color: pink; /* 設定背景顏色為粉紅色 */
+            margin-bottom: 20px; /* 在底部留出20px的外邊距 */
+            padding: 10px; /* 在內部四周空出10px的內邊距 */
         }
 
         /* 段落文字 hover 時效果 */
         .main_right p:hover {
-            transition: all 0.3s;
-            cursor: pointer;
-            font-size: 1.4rem;
-            color: crimson;
-            text-indent: 2em;
+            transition: all 0.3s; /* 設定所有屬性在0.3秒內過渡，實現平滑效果 */
+            cursor: pointer; /* 當滑鼠懸停時，指標顯示為可點擊的手形 */
+            font-size: 1.4rem; /* 當滑鼠停住時，設定文字大小為1.4rem */  /* 1rem = 16px */
+            color: crimson; /* 當滑鼠停住時，設定文字顏色為深紅色 (crimson) */
+            text-indent: 2em; /* 當滑鼠停住時，設定文字首行縮進2個字元 */ /* 2em = 2 x 當下字體大小 */
         }
 
         /* 段落文字的基礎樣式 */
         .main_right p {
-            font-size: 20px;
+            font-size: 20px; /* 設定文字大小為20px */
         }
 
         /* 整個頁面的背景色與邊框 */
         body {
-            background-color: ghostwhite;
-            border: 20px solid pink;
-        }
+            background-color: ghostwhite; /* 設定整個頁面的背景顏色為淡灰白色（ghostwhite） */
+            border: 20px solid pink; /* 設定整個頁面的邊框為20px寬的粉紅色邊框 */
+        } 
     </style>
 </head>
 <body>
     <!-- 頁首區塊 -->
     <header>
         <!-- 橫幅圖片 -->
-        <div class="banner">
+        <div class="banner"> 
             <img src="images/cartoon/banner.jpg" alt="蠟筆小新" class="img-fluid w-100">
         </div>
         
